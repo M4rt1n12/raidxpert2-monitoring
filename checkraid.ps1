@@ -1,5 +1,3 @@
-start-process -FilePath 'C:\Program Files (x86)\RAIDXpert2\rc_diag-1.bat' -Wait 
-
 # Define the path to the RAID status log file
 $logFilePath = "C:\Program Files (x86)\RAIDXpert2\HYPERV-2.txt"
 
