@@ -10,6 +10,6 @@ Monitoring raidxpert2 (for zabbix in my case)
 UserParameter=checkraid,powershell.exe -file "C:\Scripte\checkraid.ps1"
 
 
-Check file name in the ps1 file and paths!
+Check filenames and
 
 Have fun!
