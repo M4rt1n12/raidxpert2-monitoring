@@ -3,11 +3,13 @@ Monitoring raidxpert2 (for zabbix in my case)
 
 1. Create a copy rc_diag-1.bat of "C:\Program Files (x86)\RAIDXpert2\rc_diag.bat
 
-2. execute checkraid.ps1 with Windows taskplanner every hour
+2. execute rc_diag-1.bat with Windows taskplanner every hour (elevated rights)
+
+3. Add in zabbix_agent.conf:
+
+UserParameter=checkraid,powershell.exe -file "C:\Scripte\checkraid.ps1"
+
 
 Check file name in the ps1 file and paths!
 
-
-Add in zabbix_agent.conf:
-
-UserParameter=checkraid,powershell.exe -file "C:\Scripte\checkraid.ps1"
+Have fun!
