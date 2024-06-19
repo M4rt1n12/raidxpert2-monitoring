@@ -6,3 +6,8 @@ Monitoring raidxpert2 (for zabbix in my case)
 2. execute checkraid.ps1 with Windows taskplanner every hour
 
 Check file name in the ps1 file and paths!
+
+
+Add in zabbix_agent.conf:
+
+UserParameter=checkraid,powershell.exe -file "C:\Scripte\checkraid.ps1"
