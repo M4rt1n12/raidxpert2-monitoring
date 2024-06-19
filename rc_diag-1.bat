@@ -5,7 +5,7 @@ REM Add the hostname
 set output=%COMPUTERNAME%
 
 REM Add the file extension to the end of the output filename
-set output=%OUTPUT%.txt
+set output=C:\Scripte\%output%.txt
 
 SET raidcore_tool=rcadm.exe
 
